@@ -1,3 +1,6 @@
+![GitHub All Releases](https://img.shields.io/github/downloads/ardittristan/VTTButtonOverflow/total)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-Green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TF3LJHWV9U7HN)
+
 # VTT Button Overflow
 
 Makes the buttons on the left wrap around if they don't fit on the screen.
