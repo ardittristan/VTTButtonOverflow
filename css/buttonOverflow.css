@@ -1,0 +1,27 @@
+body {
+  --playerlist-height: 64px;
+}
+
+#controls .active .control-tools {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*                                           list margin | icon height*/
+  max-height: calc(100vh - var(--playerlist-height) - 24px - 60px);
+}
+
+#controls .active .control-tools li.control-tool {
+  margin-right: 8px;
+}
+
+ol#controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*                                           list margin | icon height*/
+  max-height: calc(100vh - var(--playerlist-height) - 24px - 60px);
+}
+
+ol#controls .scene-control {
+  margin-right: 8px;
+}

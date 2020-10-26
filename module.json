@@ -1,0 +1,14 @@
+{
+  "name": "buttonoverflow",
+  "title": "Button Overflow",
+  "description": "Makes the buttons on the left wrap around if they don't fit on the screen",
+  "version": "0.0.1",
+  "author": "ardittristan#0001",
+	"esmodules": ["buttonOverflow.js"],
+	"styles": ["./css/buttonOverflow.css"],
+  "url": "https://github.com/ardittristan/VTTButtonOverflow",
+  "manifest": "https://raw.githubusercontent.com/ardittristan/VTTButtonOverflow/master/module.json",
+  "download": "https://github.com/ardittristan/VTTButtonOverflow/releases/latest/download/buttonOverflow.zip",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "0.7.5"
+}
