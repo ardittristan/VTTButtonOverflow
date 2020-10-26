@@ -1,6 +1,6 @@
 # VTT Button Overflow
 
-Makes the buttons on the left wrap around if they don't fit on the screen"
+Makes the buttons on the left wrap around if they don't fit on the screen.
 
 ## Installation
 
