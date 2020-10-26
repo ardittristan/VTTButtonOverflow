@@ -1,4 +1,4 @@
-name: colorSettings CI
+name: buttonOverflow CI
 
 on:
   push:
