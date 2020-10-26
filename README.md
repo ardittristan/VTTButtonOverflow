@@ -19,10 +19,10 @@ To install, import this [Manifest](https://raw.githubusercontent.com/ardittrista
   </tr>
   <tr>
     <td>
-      ![with module](https://link)
+      <img src="https://i.ibb.co/gy0qMMJ/GIF-26-10-2020-3-47-04-PM.gif" alt="with module" style="max-height: 600px;">
     </td>
     <td>
-      ![without module](https://link)
+      <img src="https://i.ibb.co/dG9vCh1/image.png" alt="without module" style="max-height: 600px;">
     </td>
   </tr>
 </table>
