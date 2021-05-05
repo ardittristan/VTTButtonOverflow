@@ -17,6 +17,12 @@ jobs:
       shell: bash
       id: get-version
       run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+      - name: Substitute Manifest and Download Links For Versioned Ones
+      uses: microsoft/variable-substitution@v1
+      with:
+        files: 'module.json'
+      env:
+        download: https://github.com/${{github.repository}}/releases/download/${{steps.get-version.outputs.version}}/buttonOverflow.zip
     - run: zip -r ./buttonOverflow.zip module.json buttonOverflow.js css/                                      # Add folders/files here
     - name: Create Release
       id: create_latest_release
@@ -41,3 +47,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: './module.json,./buttonOverflow.zip'                                                                 # don't forget to rename module zip thing
         tag: ${{ steps.get-version.outputs.version }} # Use the version as the tag
+    - name: Invoke push script
+      uses: benc-uk/workflow-dispatch@v1
+      with:
+        workflow: Push To Deploy
+        token: ${{ secrets.PERSONAL_TOKEN }}
