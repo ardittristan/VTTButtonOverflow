@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 0.0.5
+
+* Fix to more consistent version of counting button amount.
+
 ## Version 0.0.4
 
 * Add compat for new pf2e theme.
