@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - '**.md'
       - '**.yml'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
       shell: bash
       id: get-version
       run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
-      - name: Substitute Manifest and Download Links For Versioned Ones
+    - name: Substitute Manifest and Download Links For Versioned Ones
       uses: microsoft/variable-substitution@v1
       with:
         files: 'module.json'
