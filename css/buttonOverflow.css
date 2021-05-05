@@ -19,3 +19,12 @@ ol#controls .scene-control {
 #controls .active .control-tools {
   left: var(--playerlist-offset);
 }
+
+/* pf2e wip theme compat */
+
+body.system-pf2e #controls .active .control-tools {
+  position: fixed;
+  top: 60px;
+  padding: 10px;
+  margin: 3px;
+}
