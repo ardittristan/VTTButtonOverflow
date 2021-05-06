@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 0.0.6
+
+* Add settings.
+
 ## Version 0.0.5
 
 * Fix to more consistent version of counting button amount.

@@ -2,7 +2,7 @@
   "name": "buttonoverflow",
   "title": "Button Overflow",
   "description": "Makes the buttons on the left wrap around if they don't fit on the screen",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "ardittristan#0001",
 	"esmodules": ["buttonOverflow.js"],
 	"styles": ["./css/buttonOverflow.css"],
