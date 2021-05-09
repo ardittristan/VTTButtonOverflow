@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 0.0.8
+
+- Hotfix
+
 ## Version 0.0.7
 
 - Recalc offset on setting change.

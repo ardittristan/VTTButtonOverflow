@@ -1,7 +1,7 @@
 window.buttonOverflow = {};
 
 Hooks.on("renderPlayerList", (_playerList, html) => {
-  calcPlayerListOffset();
+  calcPlayerListOffset(html);
 });
 
 window.addEventListener("resize", () => {
@@ -14,7 +14,8 @@ function calcOffset() {
   document.body.style.setProperty("--playerlist-offset", `${n}px`);
 }
 
-function calcPlayerListOffset() {
+/** @param  {JQuery} html */
+function calcPlayerListOffset(html = $("#players.app")) {
   document.body.style.setProperty("--playerlist-height", `${html.height() + (window.buttonOverflow.playerlistOffset || 0)}px`);
   calcOffset();
 }
