@@ -1,9 +1,9 @@
-body {
+body.oldButtonOverflow {
   --playerlist-height: 64px;
 }
 
-#controls .active .control-tools,
-ol#controls {
+body.oldButtonOverflow #controls .active .control-tools,
+body.oldButtonOverflow ol#controls {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -20,9 +20,17 @@ ol#controls .scene-control {
   left: var(--playerlist-offset);
 }
 
+body:not(.oldButtonOverflow) #controls .active .control-tools,
+body:not(.oldButtonOverflow) ol#controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: var(--dynamicMaxButtonHeight);
+}
+
 /* pf2e wip theme compat */
 
-body.system-pf2e #controls .active .control-tools {
+body.system-pf2e.oldButtonOverflow #controls .active .control-tools {
   position: fixed;
   top: 60px;
   padding: 10px;

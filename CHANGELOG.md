@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 0.1.0
+
+- Add experimental dynamic mode which takes into account most elements bottom left but is less responsive.
+
 ## Version 0.0.8
 
 - Hotfix
