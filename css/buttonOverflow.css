@@ -1,38 +1,6 @@
-body.oldButtonOverflow {
-  --playerlist-height: 64px;
-}
-
-body.oldButtonOverflow #controls .active .control-tools,
-body.oldButtonOverflow ol#controls {
+#controls ol.main-controls {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /*                                           list margin | icon height*/
-  max-height: calc(100vh - var(--playerlist-height) - 24px - 60px);
-}
-
-#controls .active .control-tools li.control-tool,
-ol#controls .scene-control {
-  margin-right: 8px;
-}
-
-#controls .active .control-tools {
-  left: var(--playerlist-offset);
-}
-
-body:not(.oldButtonOverflow) #controls .active .control-tools,
-body:not(.oldButtonOverflow) ol#controls {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: var(--dynamicMaxButtonHeight);
-}
-
-/* pf2e wip theme compat */
-
-body.system-pf2e.oldButtonOverflow #controls .active .control-tools {
-  position: fixed;
-  top: 60px;
-  padding: 10px;
-  margin: 3px;
+  width: var(--buttonlist-width);
 }
