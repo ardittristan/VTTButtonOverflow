@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 1.0.1
+
+- Fix for Minimal ui.
+
 ## Version 1.0.0
 
 - Rework for v9.
